@@ -668,7 +668,7 @@ def main():
         initiative=12
     )
 
-    print(BOLD + GREEN + "\nWelcome to the Knight Game!" + RESET)
+    print(BOLD + GREEN + "\nWelcome to Fechtmeister!" + RESET)
     print("You'll face an opponent in medieval combat using historical techniques.")
     print("Choose your guard, actions, and manage your stamina and fatigue wisely!")
     print(env.ascii_art)
@@ -693,11 +693,11 @@ def main():
 
         # Player input for action selection
         print(BOLD + "Choose your action:" + RESET)
-        print("1. Strike - A powerful cutting blow")
-        print("2. Thrust - A quick piercing attack")
-        print("3. Defend - Block incoming attacks")
-        print("4. Feint - Trick your opponent")
-        print("5. Rest - Recover stamina")
+        print("1. Strike - Ein Hau – a slashing attack starting in one guard position, and ending in another.")
+        print("2. Thrust - Stechen – a thrust attack between guards, looked down upon in older fencing manuals as dishonourable...")
+        print("3. Parry - Versetzen – block incoming attacks by actively defending with your blade")
+        print("4. Feint - Nachreisen – one of the many feints known to the old fechtmeister, performed by attacking into an oncoming strike")
+        print("5. Rest - Huten – Recover stamina in a withdrawing stance")
         try:
             action_choice = int(input("Your choice: "))
         except ValueError:
